@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 FrontEnd</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+
+    <form>
+        <!-- input de entrada texto -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <br><br>
+
+        <!-- input de entrada numero -->
+        <label for="telefone">Telefone:</label>
+        <input type="number" name="telefone">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="text" name="senha">
+        <br><br>
+
+        <!-- input de entrada radio (opção) -->
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="Masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br><br>
+
+        <!-- select cria dropdown | option os valores -->
+        <label for="uf">UF</label>
+        <select name="uf">
+            <option value="df">DF</option>
+        </select>
+        <br><br>
+
+        <label for="hobbies">Hobbies</label>
+        <br>
+
+        <!-- div pra caixa de opções -->
+        <!-- borda de 1px solida e pd 10px -->
+        <div class="borda" style="border: 1px black solid; padding: 10px">
+        <input type="checkbox" name="futebol" value="futebol">
+        <label for="futebol">Futebol</label>
+        
+        <input type="checkbox" name="xadrez" value="xadrez">
+        <label for="xadrez">Xadrez</label>
+        
+        <input type="checkbox" name="esportes" value="esportes">
+        <label for="esportes">Esportes</label>
+
+        <input type="checkbox" name="musica" value="musica">
+        <label for="musica">Musica</label>
+
+        <input type="checkbox" name="cinema" value="cinema">
+        <label for="cinema">Cinema</label>
+
+        <input type="checkbox" name="leitura" value="leitura">
+        <label for="leitura">Leitura</label>
+        </div>
+        <br><br>
+        
+        <!-- caixa observação -->
+        <label for="observacao">Observação:</label>
+        <!-- rows = linhas | cols = colunas -->
+        <textarea name="observacao" rows="10" cols="35"></textarea>
+        <br><br>
+
+        <!-- botao onclick pra pagina anterior -->
+        <button type="button" onclick="history.back()">Voltar</button>
+        <!-- botao de limpeza de form -->
+        <button type="reset">Limpar</button>
+        <!-- botao submit -->
+        <button type="submit">Salvar</button>
+    </form>
+
+    <hr>
+
+    <!-- link VOLTAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Voltar</a></li>
+        </ul>
+    </nav>
+
+    <h1>Tabela de Contatos</h1>
+
+    <!-- criação da tabela com borda de tamanho 1 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <!-- numero de linhas de tamanho -->
+                <th rowspan="2">Nome</th>
+                <!-- numero de colunas de tamanho -->
+                <th colspan="2">Contatos</th>
+                <th colspan="3">Endereços</th>
+            </tr>
+            <!-- thead abaixo da thead -->
+            <tr>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>CEP</th>
+                <th>UF</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Paulo</td>
+                <td>061900000001</td>
+                <td>joao@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Maria João</td>
+                <td>061900000002</td>
+                <td>maria@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Ronaldo João</td>
+                <td>061900000003</td>
+                <td>ronaldo@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Pedro João</td>
+                <td>061900000004</td>
+                <td>pedro@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>João João</td>
+                <td>061900000005</td>
+                <td>joao@teste.com</td>
+                <td>72.200-000</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
